@@ -1,0 +1,400 @@
+/* fonts */
+
+$font-stack: 'Playfair Display',
+serif;
+
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    font-family: $font-stack;
+}
+
+p {
+    text-align: justify;
+}
+
+.desktop {
+    display: none;
+}
+
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --scroll-behavior: smooth;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    padding-top: 3em;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 1em;
+    padding-left: 1em;
+
+    p {
+        padding-right: 1em;
+        padding-left: 1em;
+        font-size: 15px
+    }
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    font-family: $font-stack;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    width: 20em;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-mobile {
+    margin-top: -1.75em;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .mobile-logo {
+
+        max-width: 80%;
+    }
+
+    h3 {
+        position: absolute;
+        padding-top: 13em;
+
+        a {
+            color: black;
+        }
+    }
+}
+
+.better {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.line {
+    width: 5em;
+    height: 1px;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+.order h3 {
+    border: 1px solid black;
+    padding: 0.250em;
+    width: 10em;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+.order h3 a {
+    color: black;
+}
+
+/* email */
+#vertical {
+    margin-top: -10em;
+
+}
+
+.email {
+    display: none;
+    padding: 0;
+
+    select {
+        width: 90%;
+        height: 2em;
+        font-family: $font-stack;
+
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -webkit-padding-end: 20px;
+        -moz-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -moz-padding-start: 2px;
+        background-color: rgb(255, 255, 255);
+
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 2px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        color: rgb(0, 0, 0);
+        font-size: inherit;
+        margin: 0.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        #subject {
+            margin-bottom: 3em;
+        }
+    }
+
+    #form {
+        min-width: 60%;
+    }
+}
+
+#budget {
+    display: none;
+}
+
+@media only screen and (max-width: 736px) {
+    main {
+        padding-top: 3em;
+    }
+
+    .pdl {
+        padding-left: 0.5em;
+    }
+
+    .pdr {
+        padding-right: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 852px) {
+    .pdl {
+        padding-left: 2em;
+    }
+
+    .pdr {
+        padding-right: 2em;
+    }
+
+    .first {
+        flex-direction: row;
+        justify-content: start;
+        padding: 0;
+        align-items: flex-start;
+
+        img {
+            max-width: 60%;
+            float: left;
+        }
+
+        p {
+            float: left;
+            width: 30%;
+            padding-left: 4em;
+        }
+    }
+
+    .second {
+        flex-direction: row-reverse;
+        justify-content: start;
+        padding: 0;
+        align-items: flex-start;
+
+        img {
+            max-width: 60%;
+            float: left;
+        }
+
+        p {
+            float: left;
+            width: 30%;
+            padding-right: 4em;
+        }
+    }
+
+    .intro-mobile {
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        vertical-align: center;
+        padding-left: 0;
+        padding-right: 0;
+
+        img {
+            max-width: 60%;
+            height: auto;
+        }
+
+        .logo {
+            max-width: 30%;
+            height: auto;
+        }
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    #product {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .line {
+        width: 10em;
+    }
+
+    .order {
+        margin-top: -15em;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.form-label {
+    font-size: 12px;
+    color: #5e9bfc;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    -webkit-transition: .333s ease top, .333s ease opacity;
+    transition: .333s ease top, .333s ease opacity;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #5e9bfc;
+}
+
+.js-hide-label {
+    opacity: 0;
+}
+
+.js-unhighlight-label {
+    color: #999
+}
+
+.btn-start-order {
+    background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover,
+.btn-start-order:active,
+.btn-start-order:focus {
+    border-color: #3d3d3d;
+    color: #000000;
+}
+
+.formicka {
+    text-align: center;
+}
+
+.row {
+    justify-content: center
+}
+
+@media only screen and (min-width: 800px) {
+    .form-style-8 {
+        width: 45em;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-height: 585px) {
+    .order {
+        padding-bottom: 5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .form-style-8 {
+        width: 55em;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+}
